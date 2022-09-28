@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "ConsoleTableExt/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ConsoleTableExt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ConsoleTableExt.dll": {}
+        }
+      },
       "Microsoft.Data.Sqlite/6.0.5": {
         "type": "package",
         "dependencies": {
@@ -277,6 +286,20 @@
     }
   },
   "libraries": {
+    "ConsoleTableExt/3.2.0": {
+      "sha512": "IhaHj6R2vSbb781aRXngan6nKRp8R5rnL2X5fL0uRW2wRiFyCIUh81T/QOih0//PjzoXMk2Uv4ayBAGDLH338A==",
+      "type": "package",
+      "path": "consoletableext/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "consoletableext.3.2.0.nupkg.sha512",
+        "consoletableext.nuspec",
+        "lib/net35/ConsoleTableExt.dll",
+        "lib/net46/ConsoleTableExt.dll",
+        "lib/netstandard2.0/ConsoleTableExt.dll"
+      ]
+    },
     "Microsoft.Data.Sqlite/6.0.5": {
       "sha512": "1N2RKxj6ABpdluueSzv29oTFaEqoft6cotl4OoYo2LR8MN3puORCnBhMvHmiBgL5hDF7nLS/+goeLg9KmiLVlw==",
       "type": "package",
@@ -613,6 +636,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ConsoleTableExt >= 3.2.0",
       "Microsoft.Data.Sqlite >= 6.0.5",
       "System.Configuration.ConfigurationManager >= 6.0.0"
     ]
@@ -656,6 +680,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "ConsoleTableExt": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
           "Microsoft.Data.Sqlite": {
             "target": "Package",
             "version": "[6.0.5, )"

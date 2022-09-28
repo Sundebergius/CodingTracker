@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {}
+    "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {}
   },
   "projects": {
-    "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {
+    "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
+        "projectUniqueName": "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
         "projectName": "CodingTracker",
-        "projectPath": "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
+        "projectPath": "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
         "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-        "outputPath": "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\obj\\",
+        "outputPath": "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ConsoleTableExt": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
               "version": "[6.0.5, )"
