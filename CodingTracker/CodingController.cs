@@ -77,11 +77,49 @@ internal class CodingController
 
     internal void Post(Coding coding)
     {
+        using (var connection = new SqliteConnection(connectionString))
+        {
+            using (var tableCmd = connection.CreateCommand())
+            {
+                connection.Open();
+                tableCmd.CommandText = $"INSERT INTO coding (date, duration) VALUES ('{coding.Date}', '{coding.Duration}')";
+                tableCmd.ExecuteNonQuery();
+            }
+        }
+    }
 
+    internal void Delete(int id)
+    {
+        using (var connection = new SqliteConnection(connectionString))
+        {
+            using (var tableCmd = connection.CreateCommand())
+            {
+                connection.Open();
+                tableCmd.CommandText = $"DELETE from coding WHERE Id = '{id}'";
+                tableCmd.ExecuteNonQuery();
+
+                Console.WriteLine($"\n\nRecord with Id {id} was deleted. \n\n");
+            }
+        }
     }
 
     internal void Update(Coding coding)
     {
-        
+        using (var connection = new SqliteConnection(connectionString))
+        {
+            using (var tableCmd = connection.CreateCommand())
+            {
+                connection.Open();
+                tableCmd.CommandText = 
+                    $@"UPDATE coding SET
+                        Date = '{coding.Date}'
+                        Duration = '{coding.Duration}'
+                    WHERE
+                        Id = {coding.Id}";
+
+                tableCmd.ExecuteNonQuery();
+            }
+        }
+        Console.WriteLine($"\n\nRecord with Id {coding.Id} was updated. \n\n");
     }
 }
