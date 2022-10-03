@@ -200,7 +200,7 @@ internal class GetUserInput
 
     internal string GetDateInput()
     {
-        Console.WriteLine("\n\nPlease insert the duration: (Format: hh:mm). Type 0 to return to the main menu.\n\n");
+        Console.WriteLine("\n\nPlease insert the date: (Format: dd-mm-yy). Type 0 to return to the main menu.\n\n");
 
         string dateInput = Console.ReadLine();
         

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {}
+    "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {}
   },
   "projects": {
-    "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {
+    "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
+        "projectUniqueName": "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
         "projectName": "CodingTracker",
-        "projectPath": "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
+        "projectPath": "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\CodingTracker.csproj",
         "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-        "outputPath": "d:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\obj\\",
+        "outputPath": "D:\\Program Files (x86)\\Microsoft VS Code\\Projects\\C#\\CodingTracker\\CodingTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",

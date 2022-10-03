@@ -45,3 +45,4 @@ D:\Program Files (x86)\Microsoft VS Code\Projects\C#\CodingTracker\CodingTracker
 D:\Program Files (x86)\Microsoft VS Code\Projects\C#\CodingTracker\CodingTracker\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Program Files (x86)\Microsoft VS Code\Projects\C#\CodingTracker\CodingTracker\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Program Files (x86)\Microsoft VS Code\Projects\C#\CodingTracker\CodingTracker\obj\Debug\net6.0\CodingTracker.csproj.CopyComplete
+D:\Program Files (x86)\Microsoft VS Code\Projects\C#\CodingTracker\CodingTracker\bin\Debug\net6.0\ConsoleTableExt.dll
