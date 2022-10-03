@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Threading;
 
 internal class GetUserInput
 {
@@ -16,6 +17,7 @@ internal class GetUserInput
                 Console.WriteLine("Type 2 to Add records");
                 Console.WriteLine("Type 3 to Delete records");
                 Console.WriteLine("Type 4 to Update records");
+                Console.WriteLine("Type 5 to start tracking a current session");
 
                 string CommandInput = Console.ReadLine();
 
@@ -48,7 +50,9 @@ internal class GetUserInput
                     ProcessUpdate();
                     break;
 
-                    
+                    case "5":
+                    ProcessSession();
+                    break;
 
                 }
         }
@@ -230,5 +234,22 @@ internal class GetUserInput
             if (durationInput == "0") MainMenu(); 
         }
         return durationInput;
+    }
+
+    internal void ProcessSession()
+    {
+        Console.WriteLine("\n\nDo you want to start a timer for a new session now? Type Y to confirm. Type 0 to return to the Main Menu. \n\n");
+
+        string sessionInput = Console.ReadLine();
+
+        if (sessionInput == "0") MainMenu();
+
+        Timer timer = new Timer(TimerCallback, null, 0, 2000);
+        Console.ReadLine();
+    }
+
+    private static void TimerCallback (object o)
+    {
+        Console.WriteLine("In TimerCallback: " + DateTime.Now);
     }
 }
